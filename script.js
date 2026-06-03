@@ -1,5 +1,6 @@
 let input = document.getElementById("inputbox");
 let buttons = document.querySelectorAll("button");
+const slashsound = new Audio("./sounds/sword.mp3");
 let string = "";
 let arr = Array.from(buttons);
 arr.forEach(button => {
@@ -8,8 +9,9 @@ arr.forEach(button => {
             string = eval(string);
             inputvalue = string;
             input.value = inputvalue;
+            slashsound.currentTime = 0;
+            slashsound.play();
         }
-
         else if(e.target.innerHTML == 'AC') {
             string = "";
             input.value = string;
