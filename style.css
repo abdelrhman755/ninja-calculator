@@ -51,7 +51,7 @@ body {
     text-align: right;
     font-family: "Haruto";
     cursor:pointer;
-    color:white;
+    color:rgba(234, 23, 23, 0.783);
 }
 
 .inp-box::placeholder {
