@@ -123,3 +123,63 @@ span {
 .dot {
     font-size: 30px;
 }
+
+.shuriken {
+    position: fixed;
+    width:60px;
+    height:60px;
+    pointer-events:none;
+    opacity:0.8;
+    z-index:-1;
+    animation:spin 2s linear infinite, fly 15s linear infinite;
+    filter: drop-shadow(0 0 8px #00f7ff) drop-shadow(0 0 15px #00f7ff);
+}
+
+.s1 {
+    top:10%;
+    animation-delay:0s;
+}
+
+.s2 {
+    top:30%;
+    animation-delay:8s;
+}
+
+.s3{
+    top: 55%;
+    animation-delay:8s;
+}
+
+.s4 {
+    top:80%;
+    animation-delay:12s;
+}
+
+@keyframes spin {
+    from {
+        rotate:0deg;
+    }
+    to {
+        rotate:360deg;
+    }
+}
+
+@keyframes fly {
+    0% {
+        left: -100px;
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-40px);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    75% {
+        transform: translateY(-20px);
+    }
+    100% {
+        left: calc(100vw + 100px);
+        transform: translateY(0);
+    }
+}
