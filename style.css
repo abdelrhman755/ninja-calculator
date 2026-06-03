@@ -32,7 +32,7 @@ body {
     padding: 20px;
     border-radius:16px;
     background: transparent;
-    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    box-shadow: 0px 3px 15px rgba(234, 23, 23, 0.643);
 }
 
 .calculator div {
@@ -78,7 +78,7 @@ button {
     letter-spacing:6px;
     text-transform:uppercase;
     letter-spacing:4px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 10px rgb(23, 225, 225), 0 0 20px rgb(23, 225, 225), 0 0 40px rgb(23, 225, 225);
     animation: glow 2s ease-in-out infinite alternate;
 }
 
@@ -93,4 +93,33 @@ button {
 
 .equalbtn {
     background-color:rgba(234, 23, 23, 0.643);
+    font-size: 30px;
+    text-align:center;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+}
+
+.divoperator {
+    color:rgb(43, 225, 225);
+    font-size: 20px;
+    text-align:center;
+}
+
+.operators{
+    color:rgb(43, 225, 225);
+    font-size: 30px; 
+}
+
+.tpop {
+    color:rgb(23, 225, 225);
+}
+
+span {
+    color: rgb(23, 225, 225);
+    text-shadow: 0 0 10px rgb(23, 225, 225), 0 0 20px rgb(23, 225, 225), 0 0 40px rgb(23, 225, 225);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+
+.dot {
+    font-size: 30px;
 }
